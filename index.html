@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Box{
+            background-color:#494546;
+            width: 400px;
+            height: 600px;
+            border-radius: 5%;
+        }
+        #screen{
+            background-color: white;
+            width:350px;
+            text-align: end;
+            font-size: 30px;
+            height:50px;
+            border-radius:2%;
+        }
+        td{
+            padding:20px;
+            text-align: center;
+        }
+        input{
+            border-radius: 50%;
+      
+            padding:20px;
+        }
+        .button{
+            
+            text-align: center;
+            border-radius: 50%;
+            padding:10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <div class="Box">
+            <br>
+            <div id="screen">
+
+            </div>
+            <br>
+            <table>
+                <tr>
+                    <td><input type="button" id="C" value="C"></td>
+                    <td colspan="2"><input type="button" id="replay" value="Replay"></td>
+                    <td><input type="button" id="del" value="Del"></td>
+
+                </tr>
+                <tr>
+                    <td><input type="button" id="7" value="7"></td>
+                    <td><input type="button" id="8" value="8"></td>
+                    <td><input type="button" id="9" value="9"></td>
+                    <td><input type="button" id="/" value="/"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="4" value="4"></td>
+                    <td><input type="button" id="5" value="5"></td>
+                    <td><input type="button"  id="6" value="6"></td>
+                    <td><input type="button"  id="*" value="*"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="1" value="1"></td>
+                    <td><input type="button" id="2" value="2"></td>
+                    <td><input type="button"  id="3" value="3"></td>
+                    <td><input type="button"  id="-" value="-"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="0" value="0"></td>
+                    <td><input type="button"  id="."value="."></td>
+                    <td><input type="button"  id="+" value="+"></td>
+                    <td><input type="button" id="=" value="="></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <script>
+        var display= document.getElementById("screen");
+        var clear = document.getElementById("C");
+        clear.addEventListener('click' ,e=>{
+            console.log(e.target);
+            display.innerHTML= " ";
+        })
+
+        // var del1 = document.getElementById("del");
+        // del1.addEventListener('click' ,e=>{
+        //     console.log(e.target);
+        //     var len = (display.innerHTML.length)-1;
+        //     display.innerHTML=;
+        // })
+        var seven = document.getElementById('7');
+        seven.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        }) 
+        var eight = document.getElementById('8');
+        eight.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var nine = document.getElementById('9');
+        nine.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var divide = document.getElementById('/');
+        divide.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var four = document.getElementById('4');
+        four.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var five= document.getElementById('5');
+        five.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var six = document.getElementById('6');
+        six.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var multiply = document.getElementById('*');
+        multiply.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var one = document.getElementById('1');
+        one.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var two = document.getElementById('2');
+        two.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var three= document.getElementById('3');
+        three.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var minus = document.getElementById('-');
+        minus.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+
+        var zero = document.getElementById('0');
+        zero.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var dot = document.getElementById('.');
+        dot.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var plus = document.getElementById('+');
+        plus.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML+=e.target.value;
+        })
+        var equal = document.getElementById('=');
+        equal.addEventListener('click',e => {
+            console.log(e.target.value);
+            // display.innerText =e.target.value;
+            display.innerHTML=eval(display.innerHTML);
+        })
+
+    </script>
+</body>
+</html>
